@@ -1,7 +1,7 @@
 import React from "react";
 
 const FormPage = () => {
-  return <div>FormPage</div>;
+  return <main className="font-accent">FormPage</main>;
 };
 
 export default FormPage;
