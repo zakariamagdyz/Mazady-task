@@ -1,11 +1,18 @@
 import React from "react";
 
 import { tajawalFont } from "@/utils/fonts";
+import Header from "./components/header";
+import { DirectionProvider } from "@/providers/direction-provider";
+import MainContent from "./components/main-content";
+
 const StaticDesignPage = () => {
   return (
-    <main>
-      <h1>static page</h1>
-    </main>
+    <DirectionProvider>
+      <main lang="ar" dir="rtl">
+        <Header />
+        <MainContent />
+      </main>
+    </DirectionProvider>
   );
 };
 
