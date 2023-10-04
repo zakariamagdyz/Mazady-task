@@ -1,13 +1,11 @@
-import React from "react";
-
-import { tajawalFont } from "@/utils/fonts";
-import Header from "./components/header";
 import { DirectionProvider } from "@/providers/direction-provider";
+import Header from "./components/header";
 import MainContent from "./components/main-content";
+import { Metadata } from "next";
 
 const StaticDesignPage = () => {
   return (
-    <DirectionProvider>
+    <DirectionProvider dir="rtl">
       <main lang="ar" dir="rtl">
         <Header />
         <MainContent />

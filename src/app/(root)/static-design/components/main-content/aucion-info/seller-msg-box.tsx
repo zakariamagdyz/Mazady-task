@@ -6,10 +6,8 @@ import React from "react";
 const SellerMessageBox = () => {
   return (
     <section className="shadow-md py-6 px-5 rounded-lg space-y-2">
-      <h2 className="font-bold text-2xl text-[#414141]">
-        ارسال رسالة الى البائع
-      </h2>
-      <p className="font-normal text-[#414141] ">
+      <h2 className="font-bold text-2xl text-muted">ارسال رسالة الى البائع</h2>
+      <p className="font-normal text-muted ">
         يمكنك في وقت البث المباشر ارسال رسالة الى البائع للاستفسار
       </p>
       <form action="" className="flex gap-1 ">

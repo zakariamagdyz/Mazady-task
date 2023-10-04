@@ -18,7 +18,7 @@ const SEARCH_OPTIONS = [
 
 const SearchTypeSelector = () => {
   return (
-    <article className="text-primary">
+    <article className="text-primary font-medium">
       <Select defaultValue="4">
         <SelectTrigger className="w-[170px] bg-transparent rounded-none border-x-0 border-y-0 border-l-2 border-white justify-start gap-2">
           <SelectValue placeholder="اختر نوع البحث" />

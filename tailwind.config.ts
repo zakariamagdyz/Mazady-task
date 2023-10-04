@@ -90,7 +90,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        md: "3px 5px 37px #00000017",
+        md: "3px 5px 37px hsla(0, 0%, 0%,0.09)",
       },
     },
   },

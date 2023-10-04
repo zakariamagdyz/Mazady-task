@@ -42,7 +42,7 @@ const NavBar = () => {
   return (
     <section className="bg-gradient-to-r from-primary  to-primary-dark">
       <div className="layout py-4">
-        <nav className="layout-right ">
+        <nav className="layout-right">
           <ul className="flex ">
             {NAVBAR_MENUES.map((menu) => (
               <li key={menu.href}>
