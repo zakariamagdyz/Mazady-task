@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const AuctionState = () => {
   const auctionValue = (
     <div className="relative flex-1 rounded-lg py-2 px-5 bg-accent">
-      <dl className="text-center  text-white font-medium space-y-2 ">
+      <dl className="text-center  text-white  space-y-2 ">
         <dt className="text-sm">القيمة الحالية للمزاد</dt>
         <dd className="flex  justify-center">
           <span className="font-bold text-3xl">5000</span>
@@ -24,12 +24,12 @@ const AuctionState = () => {
   return (
     <aside className=" shadow-md rounded-lg p-3 py-5 space-y-2">
       <dl className="flex items-center justify-between rounded-lg bg-muted text-white p-3  ">
-        <dt className="font-medium">تاريخ البث</dt>
+        <dt className="">تاريخ البث</dt>
         <dd className="font-semibold">22-1-2022</dd>
       </dl>
       <div className="flex  gap-2">
         {auctionValue}
-        <dl className="text-center bg-accent/10 text-accent font-medium rounded-lg py-2 px-5 space-y-2 flex-1 ">
+        <dl className="text-center bg-accent/10 text-accent  rounded-lg py-2 px-5 space-y-2 flex-1 ">
           <dt className="text-sm">القيمة الحالية بعد الضريبة</dt>
           <dd className="flex justify-center">
             <span className="font-bold text-3xl">5050</span>

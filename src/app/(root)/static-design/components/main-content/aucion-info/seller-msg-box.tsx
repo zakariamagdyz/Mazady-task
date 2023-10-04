@@ -7,7 +7,7 @@ const SellerMessageBox = () => {
   return (
     <section className="shadow-md py-6 px-5 rounded-lg space-y-2">
       <h2 className="font-bold text-2xl text-muted">ارسال رسالة الى البائع</h2>
-      <p className="font-normal text-muted ">
+      <p className="font-regular text-muted ">
         يمكنك في وقت البث المباشر ارسال رسالة الى البائع للاستفسار
       </p>
       <form action="" className="flex gap-1 ">

@@ -14,7 +14,7 @@ const AuctionInfoCard = () => {
           <h2 className="font-bold text-muted text-xl">
             شراء مجموعة من السيارات من موديلات1990
           </h2>
-          <p className="text-[#808080] font-medium">code 1234</p>
+          <p className="text-[#808080]">code 1234</p>
         </div>
 
         <div className="flex max-md:flex-col max-md:gap-4 md:items-center justify-between gap-2">
@@ -22,7 +22,7 @@ const AuctionInfoCard = () => {
             {Array.from({ length: 3 }).map((_, i) => (
               <p
                 key={i}
-                className="p-4 md:max-xl:p-3 xl:p-4 bg-[#D20653]/10 text-primary font-medium text-xl rounded-lg leading-none"
+                className="p-4 md:max-xl:p-3 xl:p-4 bg-[#D20653]/10 text-primary text-xl rounded-lg leading-none font-regular"
               >
                 10000+
               </p>

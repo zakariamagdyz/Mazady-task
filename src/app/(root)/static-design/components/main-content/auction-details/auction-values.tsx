@@ -16,7 +16,7 @@ const AuctionValues = () => {
           key={auctionValue.id}
           className="flex items-center justify-between rounded-lg bg-[#707070]/10 text-[#707070] p-3  "
         >
-          <dt className="font-medium text-lg">{auctionValue.name}</dt>
+          <dt className=" text-lg">{auctionValue.name}</dt>
           <dd className="font-semibold text-2xl">{auctionValue.value}</dd>
         </li>
       ))}
