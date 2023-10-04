@@ -33,7 +33,7 @@ const NavBar = () => {
       <Button size={"icon"} variant={"link"} className="group">
         <Heart className="text-white h-6 w-6 fill-white group-hover:fill-yellow-400 group-hover:text-yellow-400" />
       </Button>
-      <Button className="rounded-full text-lg flex items-center lang-btn-gradient text-white ">
+      <Button className="rounded-full text-lg flex items-center bg-gradient-secondary-radial  text-white ">
         عربية
         <ChevronDown className="text-white h-8 w-8" />
       </Button>

@@ -17,7 +17,10 @@ const SellerMessageBox = () => {
             className="border border-[#E3E3E3] rounded-3xl bg-[#F3F3F3] placeholder:text-[#707070]"
           />
         </fieldset>
-        <Button size={"icon"} className="rounded-full btn-gradient">
+        <Button
+          size={"icon"}
+          className="rounded-full bg-gradient-primary-linear"
+        >
           <SendHorizonal className="rotate-180 w-6 h-6" />
         </Button>
       </form>

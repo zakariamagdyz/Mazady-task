@@ -13,7 +13,7 @@ const SearhBar = () => {
         <form className="flex items-center bg-primary/10 ">
           <SearchTypeSelector />
           <Input
-            className="rounded-none border-none bg-transparent placeholder:text-[#323232] "
+            className="border-none bg-transparent placeholder:text-[#323232] placeholder:font-regular"
             placeholder="ابحث هنا"
           />
           <Button size="default" className="bg-primary px-5">

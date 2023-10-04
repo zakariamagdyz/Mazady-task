@@ -35,7 +35,9 @@ const AuctionInfoCard = () => {
                 className="placeholder:font-bold border-[#ccc] placeholder:text-[#ccc]"
               />
             </fieldset>
-            <Button className="btn-gradient font-bold">تأكيد</Button>
+            <Button className="bg-gradient-primary-linear font-bold">
+              تأكيد
+            </Button>
           </form>
         </div>
       </section>

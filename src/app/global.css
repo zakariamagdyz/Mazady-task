@@ -30,7 +30,7 @@
 
 @layer base {
   body {
-    @apply min-h-screen;
+    @apply min-h-screen font-medium;
   }
 }
 
@@ -43,19 +43,5 @@
   }
   .layout-left {
     @apply md:col-span-1;
-  }
-  .lang-btn-gradient {
-    background: transparent
-      radial-gradient(
-        closest-side at 50% 50%,
-        #fdbc01 0%,
-        #fdba03 31%,
-        #ff951d 100%
-      )
-      0% 0% no-repeat padding-box;
-  }
-  .btn-gradient {
-    background: transparent linear-gradient(270deg, #d20653 0%, #9b0257 100%) 0%
-      0% no-repeat padding-box;
   }
 }

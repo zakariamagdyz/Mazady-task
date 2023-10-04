@@ -92,6 +92,12 @@ const config: Config = {
       boxShadow: {
         md: "3px 5px 37px hsla(0, 0%, 0%,0.09)",
       },
+      backgroundImage: {
+        "gradient-secondary-radial":
+          "radial-gradient(closest-side at 50% 50%,#fdbc01 0%,#fdba03 31%,#ff951d 100%);",
+        "gradient-primary-linear":
+          "linear-gradient(270deg, #d20653 0%, #9b0257 100%)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
