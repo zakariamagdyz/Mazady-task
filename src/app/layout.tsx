@@ -1,6 +1,8 @@
-import { robotoFont, tajawalFont } from "@/utils/fonts";
-import "./globals.css";
+import "./global.css";
+
 import type { Metadata } from "next";
+
+import { robotoFont, tajawalFont } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Mazady Front-end Task",
