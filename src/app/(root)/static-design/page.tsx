@@ -1,7 +1,9 @@
+import { Metadata } from "next";
+
 import { DirectionProvider } from "@/providers/direction-provider";
+
 import Header from "./components/header";
 import MainContent from "./components/main-content";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.APP_URL}`),

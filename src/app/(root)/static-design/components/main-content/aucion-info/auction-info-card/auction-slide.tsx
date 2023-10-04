@@ -1,59 +1,53 @@
-"use client";
-import React from "react";
-import carSlideImage from "@/assets/images/cars/car-slide.jpg";
-import { Eye, Flag, Heart, Share2 } from "lucide-react";
-import LiveIconAnimation from "@/assets/animations/live-animation.json";
-import Lottie from "lottie-react";
-import { Button } from "@/components/ui/button";
+'use client'
+import Lottie from 'lottie-react'
+import { Eye, Flag, Heart, Share2 } from 'lucide-react'
+import React from 'react'
+
+import LiveIconAnimation from '@/assets/animations/live-animation.json'
+import carSlideImage from '@/assets/images/cars/car-slide.jpg'
+import { Button } from '@/components/ui/button'
 
 const ICONS = [
-  { Component: Flag, label: "Flag" },
-  { Component: Heart, label: "Heart" },
-  { Component: Share2, label: "Share" },
-];
+  { Component: Flag, label: 'Flag' },
+  { Component: Heart, label: 'Heart' },
+  { Component: Share2, label: 'Share' },
+]
 
 const AuctionSlide = () => {
   const renderIconButtons = () =>
     ICONS.map(({ Component, label }) => (
-      <Button
-        key={label}
-        size={"icon"}
-        variant={"link"}
-        className="shadow-md w-12 h-12 rounded-full bg-[#6E6B6B]"
-      >
-        <Component className="w-6 h-6 text-white" />
+      <Button key={label} size={'icon'} variant={'link'} className='h-12 w-12 rounded-full bg-[#6E6B6B] shadow-md'>
+        <Component className='h-6 w-6 text-white' />
       </Button>
-    ));
+    ))
   return (
     <figure
       style={{ backgroundImage: `url(${carSlideImage.src})` }}
-      className={`h-[380px] bg-cover bg-no-repeat bg-center`}
+      className={`h-[380px] bg-cover bg-center bg-no-repeat`}
     >
-      <section className="flex items-center justify-between ">
-        <div className="flex max-sm:self-start text-white rounded-lg m-2 md:m-5 overflow-hidden">
-          <div className="p-2 w-16  bg-white relative">
-            <div className="h-3 absolute -top-[10px] left-1/2 -translate-x-1/2 w-24">
+      <section className='flex items-center justify-between '>
+        <div className='m-2 flex overflow-hidden rounded-lg text-white max-sm:self-start md:m-5'>
+          <div className='relative w-16  bg-white p-2'>
+            <div className='absolute left-1/2 top-[-10px] h-3 w-24 -translate-x-1/2'>
               <Lottie animationData={LiveIconAnimation} loop={true} />
             </div>
           </div>
-          <div className="p-2 py-[6px] flex  bg-[#6E6B6B]  ">
-            <div className=" border-l-2 border-[#FEFEFE]/30 flex items-center px-3   ">
-              <time className="text-lg leading-[0] mt-1">02:00</time>
+          <div className='flex bg-[#6E6B6B] p-2  py-[6px]  '>
+            <div className=' flex items-center border-l-2 border-[#FEFEFE]/30 px-3   '>
+              <time className='mt-1 text-lg leading-[0]'>02:00</time>
             </div>
 
-            <div className=" p-2 py-[6px] flex items-center gap-1 ">
-              <Eye className="w-6 h-6 " />
-              <span className="leading-none text-sm mt-1">3000</span>
+            <div className=' flex items-center gap-1 p-2 py-[6px] '>
+              <Eye className='h-6 w-6 ' />
+              <span className='mt-1 text-sm leading-none'>3000</span>
             </div>
           </div>
         </div>
 
-        <div className="max-sm:flex-col  m-2 md:m-5  flex items-center gap-3">
-          {renderIconButtons()}
-        </div>
+        <div className='m-2  flex items-center  gap-3 max-sm:flex-col md:m-5'>{renderIconButtons()}</div>
       </section>
     </figure>
-  );
-};
+  )
+}
 
-export default AuctionSlide;
+export default AuctionSlide

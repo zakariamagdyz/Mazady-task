@@ -21,11 +21,11 @@ const CompetitorInfo: FC<CompetitorInfoProps> = ({
         <AvatarFallback>{name}</AvatarFallback>
       </Avatar>
 
-      <div className="flex flex-col justify-center flex-1">
-        <h3 className="font-bold text-base">{name}</h3>
+      <div className="flex flex-1 flex-col justify-center">
+        <h3 className="text-base font-bold">{name}</h3>
         <time className="text-sm text-[#808080] ">{time}</time>
       </div>
-      <p className="bg-secondary/10 text-secondary font-bold text-2xl self-start py-1 px-4">
+      <p className="self-start bg-secondary/10 px-4 py-1 text-2xl font-bold text-secondary">
         {vote}
       </p>
     </li>

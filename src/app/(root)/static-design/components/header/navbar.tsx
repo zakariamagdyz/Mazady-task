@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button";
+import { BellRing, ChevronDown, Heart, Receipt } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { BellRing, ChevronDown, Heart, Receipt } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
 
 const NAVBAR_MENUES = [
   {
@@ -25,17 +26,17 @@ const NavBar = () => {
   const actionMenus = (
     <div className="flex gap-4">
       <Button size={"icon"} variant={"link"} className="group">
-        <Receipt className="  text-white h-6 w-6 group-hover:text-yellow-400" />
+        <Receipt className="  h-6 w-6 text-white group-hover:text-yellow-400" />
       </Button>
       <Button size={"icon"} variant={"link"} className="group">
-        <BellRing className=" fill-white text-white h-6 w-6 group-hover:text-yellow-400 group-hover:fill-yellow-400" />
+        <BellRing className=" h-6 w-6 fill-white text-white group-hover:fill-yellow-400 group-hover:text-yellow-400" />
       </Button>
       <Button size={"icon"} variant={"link"} className="group">
-        <Heart className="text-white h-6 w-6 fill-white group-hover:fill-yellow-400 group-hover:text-yellow-400" />
+        <Heart className="h-6 w-6 fill-white text-white group-hover:fill-yellow-400 group-hover:text-yellow-400" />
       </Button>
-      <Button className="rounded-full text-lg flex items-center bg-gradient-secondary-radial  text-white ">
+      <Button className="flex items-center rounded-full bg-gradient-secondary-radial text-lg  text-white ">
         عربية
-        <ChevronDown className="text-white h-8 w-8" />
+        <ChevronDown className="h-8 w-8 text-white" />
       </Button>
     </div>
   );
@@ -49,7 +50,7 @@ const NavBar = () => {
                 <Button
                   asChild
                   variant={"link"}
-                  className="text-white hover:text-black transition hover:no-underline text-base"
+                  className="text-base text-white transition hover:text-black hover:no-underline"
                 >
                   <Link href={menu.href}>{menu.label}</Link>
                 </Button>

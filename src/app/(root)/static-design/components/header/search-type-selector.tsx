@@ -20,7 +20,7 @@ const SearchTypeSelector = () => {
   return (
     <article className="text-primary">
       <Select defaultValue="4">
-        <SelectTrigger className="w-[170px] bg-transparent rounded-none border-x-0 border-y-0 border-l-2 border-white justify-start gap-2">
+        <SelectTrigger className="w-[170px] justify-start gap-2 rounded-none border-0 border-l-2 border-white bg-transparent">
           <SelectValue placeholder="اختر نوع البحث" />
         </SelectTrigger>
         <SelectContent className="bg-[#FFF4E8]">

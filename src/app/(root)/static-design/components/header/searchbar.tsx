@@ -1,11 +1,14 @@
-import React from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
-import mazadyLogo from "@/assets/images/mazady-logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+
+import mazadyLogo from "@/assets/images/mazady-logo.png";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
 import SearchTypeSelector from "./search-type-selector";
+
 const SearhBar = () => {
   return (
     <section className="layout py-3">
@@ -13,16 +16,16 @@ const SearhBar = () => {
         <form className="flex items-center bg-primary/10 ">
           <SearchTypeSelector />
           <Input
-            className="border-none bg-transparent placeholder:text-[#323232] placeholder:font-regular"
+            className="border-none bg-transparent placeholder:font-regular placeholder:text-[#323232]"
             placeholder="ابحث هنا"
           />
           <Button size="default" className="bg-primary px-5">
-            <Search className="w-5 h-5 text-white" />
+            <Search className="h-5 w-5 text-white" />
           </Button>
         </form>
       </div>
       <aside className="layout-left mr-auto max-md:order-first">
-        <Button asChild className="hover:no-underline p-0 " variant={"link"}>
+        <Button asChild className="p-0 hover:no-underline " variant={"link"}>
           <Link href="/static-design">
             <Image src={mazadyLogo} alt="mazady logo" width="109" height="35" />
           </Link>

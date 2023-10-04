@@ -10,14 +10,14 @@ const AUCTION_VALUES = [
 
 const AuctionValues = () => {
   return (
-    <ul className=" shadow-md rounded-lg py-6 px-5  space-y-4">
+    <ul className=" space-y-4 rounded-lg px-5 py-6  shadow-md">
       {AUCTION_VALUES.map((auctionValue) => (
         <li
           key={auctionValue.id}
-          className="flex items-center justify-between rounded-lg bg-[#707070]/10 text-[#707070] p-3  "
+          className="flex items-center justify-between rounded-lg bg-[#707070]/10 p-3 text-[#707070]  "
         >
           <dt className=" text-lg">{auctionValue.name}</dt>
-          <dd className="font-semibold text-2xl">{auctionValue.value}</dd>
+          <dd className="text-2xl font-semibold">{auctionValue.value}</dd>
         </li>
       ))}
     </ul>

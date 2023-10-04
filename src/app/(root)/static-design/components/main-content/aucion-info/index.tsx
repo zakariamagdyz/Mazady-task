@@ -1,15 +1,16 @@
 import React from "react";
-import CarImageGallery from "./cars-gallery";
+
 import AuctionInfoCard from "./auction-info-card";
+import CarImageGallery from "./cars-gallery";
 import SellerMessageBox from "./seller-msg-box";
 
 const AuctionInfo = () => {
   return (
-    <div className="grid lg:grid-cols-8 gap-2">
+    <div className="grid gap-2 lg:grid-cols-8">
       <aside className="col-span-1 lg:mr-auto">
         <CarImageGallery />
       </aside>
-      <section className="lg:col-span-7 space-y-8">
+      <section className="space-y-8 lg:col-span-7">
         <AuctionInfoCard />
         <SellerMessageBox />
       </section>

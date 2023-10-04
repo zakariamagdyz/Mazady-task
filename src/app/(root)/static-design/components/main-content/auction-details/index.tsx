@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
+
 import AuctionState from "./auction-state";
-import Competitors from "./competitors";
 import AuctionValues from "./auction-values";
+import Competitors from "./competitors";
 
 const AuctionDetails = () => {
   return (
