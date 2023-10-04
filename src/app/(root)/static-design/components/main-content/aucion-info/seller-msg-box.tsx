@@ -12,11 +12,13 @@ const SellerMessageBox = () => {
       <p className="font-normal text-[#414141] ">
         يمكنك في وقت البث المباشر ارسال رسالة الى البائع للاستفسار
       </p>
-      <form action="" className="flex gap-1 items-center ">
-        <Input
-          placeholder="اكتب سؤالك"
-          className="border border-[#E3E3E3] rounded-3xl bg-[#F3F3F3] placeholder:text-[#707070] "
-        />
+      <form action="" className="flex gap-1 ">
+        <fieldset className="grow">
+          <Input
+            placeholder="اكتب سؤالك"
+            className="border border-[#E3E3E3] rounded-3xl bg-[#F3F3F3] placeholder:text-[#707070]"
+          />
+        </fieldset>
         <Button size={"icon"} className="rounded-full btn-gradient">
           <SendHorizonal className="rotate-180 w-6 h-6" />
         </Button>

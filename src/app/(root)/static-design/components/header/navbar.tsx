@@ -26,7 +26,7 @@ const NavBar = () => {
     <div className="flex gap-4">
       <Button size={"icon"} variant={"link"} className="group">
         <Receipt className="  text-white h-6 w-6 group-hover:text-yellow-400" />
-      </Button>{" "}
+      </Button>
       <Button size={"icon"} variant={"link"} className="group">
         <BellRing className=" fill-white text-white h-6 w-6 group-hover:text-yellow-400 group-hover:fill-yellow-400" />
       </Button>
