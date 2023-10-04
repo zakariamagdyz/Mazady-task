@@ -44,7 +44,7 @@ const COMPETITORS = [
 ];
 const Competitors = () => {
   return (
-    <aside className="bg-white shadow-md rounded-lg py-6 px-5  space-y-4">
+    <aside className="shadow-md rounded-lg py-6 px-5  space-y-4">
       <h2 className="font-bold text-3xl">المتنافسون</h2>
       <section className="space-y-4">
         {COMPETITORS.map((competitor) => (

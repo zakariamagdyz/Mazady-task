@@ -10,7 +10,7 @@ const AUCTION_VALUES = [
 
 const AuctionValues = () => {
   return (
-    <aside className="bg-white shadow-md rounded-lg py-6 px-5  space-y-4">
+    <aside className=" shadow-md rounded-lg py-6 px-5  space-y-4">
       {AUCTION_VALUES.map((auctionValue) => (
         <div
           key={auctionValue.id}

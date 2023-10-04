@@ -54,4 +54,8 @@
       )
       0% 0% no-repeat padding-box;
   }
+  .btn-gradient {
+    background: transparent linear-gradient(270deg, #d20653 0%, #9b0257 100%) 0%
+      0% no-repeat padding-box;
+  }
 }

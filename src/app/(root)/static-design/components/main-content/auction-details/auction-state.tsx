@@ -22,7 +22,7 @@ const AuctionState = () => {
     </div>
   );
   return (
-    <aside className="bg-white shadow-md rounded-lg p-3 py-5 space-y-2">
+    <aside className=" shadow-md rounded-lg p-3 py-5 space-y-2">
       <dl className="flex items-center justify-between rounded-lg bg-[#414141] text-white p-3  ">
         <dt className="font-medium">تاريخ البث</dt>
         <dd className="font-semibold">22-1-2022</dd>
