@@ -2,7 +2,8 @@
 
 ### 1. **Overview**:
 
-A dynamic form where dropdown values depend on the previous selections, with the aim to assess coding techniques, quality, and testing methods.
+A dynamic form where dropdown values depend on the previous selections, with the aim to assess coding techniques,
+quality, and testing methods.
 
 ---
 
@@ -25,7 +26,6 @@ A dynamic form where dropdown values depend on the previous selections, with the
 #### **Get Sub-categories**:
 
 - When a main category is selected:
-  - get the sub-categories using the `unknown` endpoint, passing the selected category ID as a parameter.
   - Populate the Sub-category dropdown with these values.
 
 #### **Fetch Properties and Sub-properties**:
@@ -36,7 +36,8 @@ A dynamic form where dropdown values depend on the previous selections, with the
   - Display as a dropdown.
   - Append an "other" option.
   - If "other" is selected, display an input field for custom value entry.
-- If a property is a parent to other properties (like brand -> model), then selecting a value in the property dropdown should generate a child property dropdown.
+- If a property is a parent to other properties (like brand -> model), then selecting a value in the property dropdown
+  should generate a child property dropdown.
 
 ##### **Data Flow Diagram**:
 
@@ -63,47 +64,59 @@ A dynamic form where dropdown values depend on the previous selections, with the
 #### **Endpoints**:
 
 - **Main Categories**: `https://staging.mazaady.com/api/v1/get_all_cats`
+
   - Predicted Response:
+
     ```json
     [
       {
         "id": 1,
         "name": "Electronics",
-        "description": "Electronic devices and gadgets."
+        "description": "Electronic devices and gadgets.",
+        "children": [
+          {
+            "id": 10,
+            "name": "Cars",
+            "description": "Cars and automobiles."
+          },
+          {
+            "id": 11,
+            "name": "Mobile Phones",
+            "description": "Mobile phones and accessories."
+          },
+          {
+            "id": 12,
+            "name": "Computers",
+            "description": "Computers and accessories."
+          }
+        ]
       },
       {
         "id": 2,
         "name": "Clothing",
-        "description": "Apparel and clothing items."
+        "description": "Apparel and clothing items.",
+        "children": [
+          {
+            "id": 13,
+            "name": "Shirts",
+            "description": "Shirts and tops."
+          },
+          {
+            "id": 14,
+            "name": "Pants",
+            "description": "Pants and trousers."
+          },
+          {
+            "id": 15,
+            "name": "Shoes",
+            "description": "Shoes and footwear."
+          }
+        ]
       }
+
       // ... more categories
     ]
     ```
-- **Sub-categories**: _Missing URL_
-
-  - Predicted Response:
-
-  ```json
-  [
-    {
-      "id": 10,
-      "name": "Cars",
-      "description": "Cars and automobiles."
-    },
-    {
-      "id": 11,
-      "name": "Mobile Phones",
-      "description": "Mobile phones and accessories."
-    },
-    {
-      "id": 12,
-      "name": "Computers",
-      "description": "Computers and accessories."
-    }
-
-    // ... more sub-categories
-  ]
-  ```
 
 - **Sub-categories/Properties**: `https://staging.mazaady.com/api/v1/properties?cat=<CATEGORY_ID>`
 
