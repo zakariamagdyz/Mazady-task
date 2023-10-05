@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Front-End Development Tasks [Link](https://mazady-task-livid.vercel.app)
 
-## Getting Started
+## Task 1: Creating Static Page with Tailwind CSS
 
-First, run the development server:
+### Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Semantic HTML for Accessibility**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   - Utilized semantic HTML elements to ensure a screen reader-friendly experience for users with disabilities.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Keyboard Navigation Support**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   - Implemented full keyboard navigation support to enhance accessibility and make the app more user-friendly.
 
-## Learn More
+3. **Responsive Design**
 
-To learn more about Next.js, take a look at the following resources:
+   - Designed the page to be fully responsive, ensuring a seamless experience across various devices and screen sizes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Optimized Performance**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   - Utilized SVG component libraries instead of PNG assets, improving performance and speeding up page load times.
 
-## Deploy on Vercel
+5. **SEO Optimization**
+   - Added Open Graph (OG) meta tags and Twitter tags to enhance SEO friendliness, improving crawler indexing and social
+     sharing capabilities.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Task 2: Form Component Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Features:
+
+1. **Caching Layer for Improved User Experience**
+
+   - Implemented a caching layer to enhance user experience by reducing load times and providing a smoother form
+     interaction.
+
+2. **Async Error Handling**
+
+   - Integrated asynchronous error handling mechanisms to gracefully manage and display errors without disrupting the
+     user's experience.
+
+3. **Data Validation**
+
+   - Implemented robust data validation to ensure that user input is accurate and secure, preventing data corruption or
+     malicious inputs.
+
+4. **Unit Testing & Integration Testing**
+
+   - Thoroughly tested the form component with both unit tests and integration tests to catch bugs and ensure
+     reliability.
+
+5. **System Design Diagram**
+   - Created a comprehensive system design diagram that visually represents the task logic, helping the development team
+     understand the component's architecture and flow. [System Design Diagram](./system-design/Mazady-SD.md)
+
+By completing these tasks, you've not only enhanced the accessibility, performance, and user experience of the static
+page but also created a robust and reliable form component. These efforts contribute significantly to the overall
+quality of the front-end development project.
