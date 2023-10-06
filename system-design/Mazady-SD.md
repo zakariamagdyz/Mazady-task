@@ -31,7 +31,7 @@ quality, and testing methods.
 #### **Fetch Properties and Sub-properties**:
 
 - On selecting a sub-category:
-  - Fetch the sub-categories using the `properties` endpoint, passing the selected category ID as a parameter.
+  - Fetch the sub-category's properties using the `properties` endpoint, passing the selected category ID as a search param.
 - For each property:
   - Display as a dropdown.
   - Append an "other" option.
