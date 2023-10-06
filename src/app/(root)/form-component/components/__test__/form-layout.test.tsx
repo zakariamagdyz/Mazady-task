@@ -4,7 +4,7 @@ import { userEvent } from '@testing-library/user-event'
 import { Categories } from '@/mocks/data/categories'
 import { customRender } from '@/mocks/utils/custom-render'
 
-import LayoutForm from '../index'
+import LayoutForm from '../form-layout/index'
 
 const allCats = Categories
 const handleTableData = jest.fn()
@@ -76,6 +76,28 @@ describe('LayoutForm', () => {
 
     expect(modelOptionSelcet).toBeInTheDocument()
     expect(modelOptionValue).toBeInTheDocument()
+  })
+
+  it('should render custom input when user selects other option', async () => {
+    customRender(<LayoutForm allCats={allCats} handleTableData={handleTableData} resetTableData={resetTableData} />)
+
+    await userEvent.click(getMainCategory()!)
+    const mainCategoryOption = screen.getByText('سيارات ودرجات ومستلزماتها')
+    await userEvent.click(mainCategoryOption)
+
+    await userEvent.click(getSubCategory()!)
+    const subCategoryOption = screen.getByText('سيارات')
+    await userEvent.click(subCategoryOption)
+
+    const propertySelect = await screen.findByText('Select brand')
+    await userEvent.click(propertySelect)
+
+    const otherOption = await screen.findByText('Other')
+    await userEvent.click(otherOption)
+
+    const customBrandInput = screen.getByPlaceholderText('Enter new brand value')
+
+    expect(customBrandInput).toBeInTheDocument()
   })
 })
 
