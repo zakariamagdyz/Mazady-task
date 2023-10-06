@@ -40,8 +40,7 @@
 
 3. **Data Validation**
 
-   - Implemented robust data validation to ensure that user input is accurate and secure, preventing data corruption or
-     malicious inputs.
+   - Implemented robust data validation to ensure that user input is accurate and secure
 
 4. **Unit Testing & Integration Testing**
 
@@ -51,4 +50,3 @@
 5. **System Design Diagram**
    - Created a comprehensive system design diagram that visually represents the task logic, helping the development team
      understand the component's architecture and flow. [System Design Diagram](./system-design/Mazady-SD.md)
-
