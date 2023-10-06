@@ -1,4 +1,3 @@
-/* eslint-disable testing-library/no-node-access */
 import { screen } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
 
@@ -72,10 +71,13 @@ describe('LayoutForm', () => {
     await userEvent.click(propertyOptionSelcet)
 
     const modelOptionSelcet = await screen.findByText('Select model')
+    await userEvent.click(modelOptionSelcet)
+    const modelOptionValue = await screen.findByText('Punto Evo')
 
     expect(modelOptionSelcet).toBeInTheDocument()
+    expect(modelOptionValue).toBeInTheDocument()
   })
 })
 
-const getMainCategory = () => document.getElementById('react-select-mainCategory-input')
-const getSubCategory = () => document.getElementById('react-select-subCategory-input')
+const getMainCategory = () => screen.getByText(/Select Main Category/)
+const getSubCategory = () => screen.getByText(/Select Sub Category/)

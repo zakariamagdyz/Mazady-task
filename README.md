@@ -40,8 +40,7 @@
 
 3. **Data Validation**
 
-   - Implemented robust data validation to ensure that user input is accurate and secure, preventing data corruption or
-     malicious inputs.
+   - Implemented robust data validation to ensure that user input is accurate and secure
 
 4. **Unit Testing & Integration Testing**
 
@@ -51,7 +50,3 @@
 5. **System Design Diagram**
    - Created a comprehensive system design diagram that visually represents the task logic, helping the development team
      understand the component's architecture and flow. [System Design Diagram](./system-design/Mazady-SD.md)
-
-By completing these tasks, you've not only enhanced the accessibility, performance, and user experience of the static
-page but also created a robust and reliable form component. These efforts contribute significantly to the overall
-quality of the front-end development project.
