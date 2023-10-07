@@ -6,6 +6,9 @@ export const getAllCategories = async (): Promise<Category[]> => {
     headers: {
       'private-key': PRIVATE_KEY,
     },
+    next: {
+      revalidate: 0,
+    },
   })
   const data = await res.json()
   if (!res.ok) {
