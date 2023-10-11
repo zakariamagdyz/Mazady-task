@@ -40,7 +40,7 @@
 
 3. **Data Validation**
 
-   - Implemented robust data validation to ensure that user input is accurate and secure
+   - Implemented robust data validation to ensure that user input is accurate and secure.
 
 4. **Unit Testing & Integration Testing**
 
