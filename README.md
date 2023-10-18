@@ -1,4 +1,6 @@
-# Front-End Development Tasks [Link](https://mazady-task-livid.vercel.app)
+# Front-End Development Tasks [System Design Diagram](./Frontend (Next) Task.pdf.pdf)   
+
+ Live: [Link](https://mazady-task-livid.vercel.app)
 
 ## Task 1: Creating Static Page with Tailwind CSS
 
